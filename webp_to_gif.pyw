@@ -5,6 +5,7 @@ from PyQt5.QtWidgets import QApplication, QMainWindow, QVBoxLayout, QWidget, QPu
 from PyQt5.QtCore import Qt, QTimer, QThread, pyqtSignal
 
 
+#so the GUI can still be responsive and be updated (for example with the progress of the operation)
 class ConverterThread(QThread):
     progress_signal = pyqtSignal(int, int)
 
